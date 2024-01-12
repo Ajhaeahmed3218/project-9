@@ -59,7 +59,7 @@ font-size: 4rem;
 font-weight: 700;
 line-height: normal
 }
-.bennar-paragreph{
+.text-gre{
 color:  #727272;
 text-align: center;
 font-size: 1rem;
@@ -71,6 +71,49 @@ line-height: 26px;
     margin-top: 20px;
 }
 
+
+
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-content-title{
+    font-size: 2.8rem;
+    padding-bottom: 1.5rem;
+    
+}
+.Quick-list{
+    color:#727272 ;
+    font-weight: 500;
+}
+.Features{
+     color: #FF900E;
+     font-weight: 700px;   
+}
+.teams-content-description{
+    padding-bottom:2rem;
+    color:  #727272;
+}
+
+
+
+
+
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
@@ -78,14 +121,37 @@ line-height: 26px;
     nav{
         flex-direction: column;
     }
+    .teams-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     
 }
-@media screen and (min-width:576px) and (max-width:960px;) {
+
+@media screen and (min-width:576px) and (max-width:960px) {
     header{
         padding: 50px;
         
     }
-    nav{
+    nav {
+        flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+        
+    }
+    nav {
         flex-direction: column;
     }
     
